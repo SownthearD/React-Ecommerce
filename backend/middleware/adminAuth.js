@@ -6,10 +6,12 @@ const adminAuth = async (req, res, next) => {
     if (!token) {
       return res.json({
         success: false,
-        message: "Not Authroized Login again",
+        message: "No Token Found",
       });
     }
     const token_decode = jwt.verify(token, process.env.JWT_SECRET);
+    // console.log('decoder',token_decode);
+    
     if (token_decode !== process.env.ADMIN_EMAIL + process.env.ADMIN_PASSWORD) {
       return res.json({
         success: false,
