@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { createContext } from "react";
 import axios from 'axios'
-import "dotenv/config";
 // import { products } from "../assets/assets";
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';

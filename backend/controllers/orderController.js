@@ -37,7 +37,9 @@ const placeOrderStripe = async (req,res) => {}
 const placeOrderRazorpay = async (req,res) => {}
 
 // All orders data for Admin Panel
-const allorders = async (req,res) => {}
+const allorders = async (req,res) => {
+    
+}
 
 // User Order data for Frontend
 const userOrders = async (req,res) => {
