@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { createContext } from "react";
 import axios from 'axios'
+import {dotenv} from 'dotenv'
 // import { products } from "../assets/assets";
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
+dotenv.config();
 export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
 
     const currency = '$';
     const delivery_fee = 10;
-    const backendUrl = "http://localhost:4000"
+    const backendUrl = process.env.VITE_BACKEND_URL;
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
