@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import {BrowserRouter} from 'react-router-dom'
 import App from './App'
-import ShopContextProvider from './context/Shopcontext'
+import ShopContextProvider from './context/ShopContext'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
