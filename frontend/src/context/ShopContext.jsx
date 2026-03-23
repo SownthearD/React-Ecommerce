@@ -12,7 +12,7 @@ const ShopContextProvider = (props) => {
 
     const currency = '$';
     const delivery_fee = 10;
-    const backendUrl = process.env.VITE_BACKEND_URL;
+    const backendUrl = "https://react-ecommerce-be-dun.vercel.app/";
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
